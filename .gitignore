@@ -1,0 +1,51 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+landing/.env.local
+landing/.env*.local
+
+# --- Python ---
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Next.js / Node ---
+landing/node_modules/
+landing/.next/
+landing/out/
+landing/build/
+
+# --- Runtime caches (üretilen, paylaşmayalım) ---
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+gorsel_cache.db
+kullanim_cache.db
+
+# --- Üretilen cache klasörleri (tekrar üretilebilir) ---
+ceviri_cache/
+job_results/
+*.log
+
+# --- Geçici / scratch dosyaları ---
+translation_logic_output.txt
+
+# --- FAISS vector store (büyük + tekrar üretilebilir) ---
+lostick_faiss_hafiza/
+lostick_hafiza/
+faiss_cache/
+
+# --- Geçici PDF'ler ---
+temp_*.pdf
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

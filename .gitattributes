@@ -1,0 +1,23 @@
+# Satır sonlarını normalize et (cross-platform tutarlılık)
+* text=auto
+
+# Windows betikleri her zaman CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Shell betikleri her zaman LF
+*.sh text eol=lf
+
+# İkili dosyalar (diff/merge yok)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.db binary

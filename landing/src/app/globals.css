@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+::selection {
+  background-color: #ffc107;
+  color: #6d5100;
+}
+
+@keyframes pulse-gold {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animate-scan {
+  animation: scan-line 2.8s ease-in-out infinite;
+}
+
+@keyframes highlight-fade {
+  0%,
+  100% {
+    background-color: rgba(82, 70, 50, 0.4);
+  }
+  50% {
+    background-color: rgba(255, 193, 7, 0.35);
+  }
+}
+
+.animate-highlight {
+  animation: highlight-fade 2.4s ease-in-out infinite;
+}
+
+@keyframes progress-fill {
+  0% {
+    width: 12%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+
+.animate-progress {
+  animation: progress-fill 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes tag-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+.animate-tag {
+  animation: tag-rise 3s ease-in-out infinite;
+}

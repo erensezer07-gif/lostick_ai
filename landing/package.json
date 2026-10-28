@@ -1,0 +1,36 @@
+{
+  "name": "lostick-landing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/dompurify": "^3.0.5",
+    "docx": "^9.6.1",
+    "dompurify": "^3.4.5",
+    "jspdf": "^4.2.1",
+    "mermaid": "^11.15.0",
+    "next": "^14.2.33",
+    "pdfmake": "^0.3.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/pdfmake": "^0.3.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
+  }
+}
